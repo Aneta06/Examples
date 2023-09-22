@@ -1,0 +1,19 @@
+public class CountUpToChallenge {
+
+    public static void main (String[] args){
+
+        countUpto(10, 20);
+
+    }
+
+    public static void countUpto(int start, int end){
+
+        if (start <= end){
+            System.out.println(start);
+            countUpto(start + 1, end);
+
+        }
+
+
+    }
+}
