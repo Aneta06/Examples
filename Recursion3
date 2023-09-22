@@ -1,0 +1,19 @@
+public class Recursion3 {
+
+    public static void main (String[] args){
+
+        int n = m3(6);
+        System.out.println(n);
+
+    }
+
+    public static int m3(int n) {
+        System.out.println(n);
+        if (n == 1) {
+            return 25;
+        } else {
+            return n + m3(n-1);
+        }
+
+    }
+}
