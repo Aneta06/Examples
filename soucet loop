@@ -1,0 +1,17 @@
+        int highestNumber = 5;
+        System.out.println(sum (highestNumber));
+
+        }
+
+        public static int sum ( int number){
+
+            int nevim = 0;
+
+
+            for (int i = 0; i <= number; i++) {
+                nevim = nevim + i;
+
+            }
+            return nevim;
+        }
+    }
