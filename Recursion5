@@ -1,0 +1,20 @@
+public class Factorial2 {
+
+    public static void main (String[] args){
+
+        int f = factorial (4); // pojede to 4x
+        System.out.println(f);
+    }
+
+    static int factorial (int n) { // n = 4
+        System.out.println(n);
+        if (n == 1){
+            return 1;
+        }
+        else {
+            int result = n * factorial(n-1); //tady se meni n a snizuje se o jedna dokud se n nerovna 0
+            System.out.println(n);
+            return result;
+        }
+    }
+}
