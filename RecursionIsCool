@@ -1,0 +1,22 @@
+public class RecursionIsCool {
+
+    public static void main (String[] args){
+
+        sayHi(5); // 5 aby sme vedeli kolikrat se to ma stat
+
+    }
+
+    public static void sayHi(int n){ // n je 5 aby sme vedeli kolikrat se to ma stat
+        if (n == 0) { // az to projede 5x a bude n = 0 tak vytiskni done
+            System.out.println("done");
+
+        } else {
+            System.out.println("hi"); //odpocitava 5x dolu do nuly
+            n--;
+            sayHi(n);
+
+        }
+
+       //need a base case aby vedelo kdy se to ma zastavit
+    }
+}
