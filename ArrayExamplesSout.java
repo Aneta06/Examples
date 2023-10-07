@@ -19,10 +19,10 @@ public class ArrayExamplesSout {
 
 
         // tohle mi udava adresu kde array je, nekde v pocitaci
-        //System.out.println(mujArray);
+          System.out.println(mujArray);
 
         // tohle mi udava velikost Array, ze tam jsou dve hodnoty
-        // System.out.println(mujArray.length);
+          System.out.println(mujArray.length);
 
 
         //  tohle mi to vytiskne vedle sebe a za poslední mi to nedá čárku
