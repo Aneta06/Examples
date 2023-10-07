@@ -10,6 +10,10 @@ public class ArrayLists {
         // We specify the type (if we want to) on the declaration side (left) , no need in initialisation (right)
         // Every constructor ends with "()" even if no arguments given
 
+        // ArrayList může používat pouze objekty (NE primitivní typy)
+         // Typ specifikujeme (pokud chceme) na straně deklarace (vlevo), není potřeba inicializace (vpravo)
+         // Každý konstruktor končí "()", i když nejsou uvedeny žádné argumenty
+
         ArrayList<Integer> nums = new ArrayList<>();
 
         // METHODS
@@ -17,6 +21,10 @@ public class ArrayLists {
         // nums.add(number) - Adds a number at the end of the ArrayList
         // nums.add(index, number) - Adds a number at the specified index and shifts the rest
         // nums.remove(index) - Removes a value from ArrayList at index and reformats indexes in ArrayList
+
+        // nums.add(číslo) - Přidá číslo na konec ArrayList
+         // nums.add(index, číslo) - Přidá číslo na zadaný index a posune zbytek
+         // nums.remove(index) - Odebere hodnotu z ArrayList v indexu a přeformátuje indexy v ArrayList
 
             nums.add(1);
             nums.add(2);
@@ -26,19 +34,24 @@ public class ArrayLists {
         // to print value at i, we need to use nums.get(i) method, NOT nums[i] unlike Arrays
         // To find the amount of values stored in ArrayList we need nums.size() method, NOT nums.lenght() unlike Arrays
 
+        // k vytištění hodnoty na i musíme použít metodu nums.get(i), NE nums[i] na rozdíl od Arrays
+         // K nalezení množství hodnot uložených v ArrayList potřebujeme metodu nums.size(), NE nums.lenght() na rozdíl od Arrays
+
             for (int i=0; i < nums.size(); i++) {
-                System.out.printf("Index: %d  ;  Number: %d\n", i, nums.get(i));
+                System.out.printf("Index: %d  ;  Number: %d\n", i, nums.get(i)); // 
             }
 
         System.out.println("----------");
 
         // We can still use the enhanced for loop just like with Arrays (if we don't need index count)
+      // Stále můžeme použít vylepšenou smyčku for stejně jako u Arrays (pokud nepotřebujeme počet indexů)
             for (int number : nums) {
                 System.out.printf("Number: %d\n", number);
             }
 
         // SWAP first and last element of ArrayList using nums.set(index, value) method
-            int temp = nums.get(0);
+        // vyměnit první a poslední prvek ArrayList pomocí metody nums.set(index, value).
+            int temp = nums.get(0);   //vytvorim si novou proměnou
             nums.set(0, nums.get(2));
             nums.set(2, temp);
 
