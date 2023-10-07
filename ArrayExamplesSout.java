@@ -12,6 +12,10 @@ public class ArrayExamplesSout {
 
         int [] mujArray = {1, 2, 5, 6};
 
+        for (int i = 0; i < mujArray.length; i++) { // loopou vytisknu Stringy pod sebe
+            System.out.println(mujArray[i]);
+        }
+
 
 
         // tohle mi udava adresu kde array je, nekde v pocitaci
