@@ -6,8 +6,8 @@ public class DataStructures {
         // ######### DATA STRUCTURES ###########
 
         //////////////////////////////// ARRAYS (fixní velikost, primitivní datové typy / referenční datové typy)
-
-        int[] mujArray = new int[2];                        // Prazdný array o velikosti 2
+        String[] cars = new String[3]                        // Prazdný array o velikosti 3 a je to typ String 
+        int[] mujArray = new int[2];                        // Prazdný array o velikosti 2 a je to typ int 
         int[] mujArray2 = new int[]{1, 2};                 // Array o velikosti 2 s prvky {1,2} na indexech 0 a 1
         int a = mujArray2[1];                               // Uloží prvek na indexu 1 (2. pozice) do proměnné "a"
         int b = mujArray2.length;                           // Uloží počet prvků v arrayi do proměnné "b"
@@ -52,6 +52,9 @@ public class DataStructures {
 
         List<String> listStringu = new ArrayList<>();               // Deklaruje a zároveň inicializuje nový prázdný list
         // který bude v sobě mít elementy typu String
+
+        List<Integer> listInteger = new ArryzList<>();               // Deklaruje a zároveň inicializuje nový prázdný list
+        // který bude v sobě mít elementy typu Integer
 
         String[] arrayStringu = new String[]{"Dan", "Honza", "Jana", "Tomas"};
         List<String> listZArraye = new ArrayList<>(List.of(arrayStringu));          // Jak z arraye Stringů udělat nový List<String>.
