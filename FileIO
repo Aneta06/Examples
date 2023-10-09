@@ -13,6 +13,12 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 // 2. List<String> fileLines = Files.readAllLines(somePath, UTF_8) = Saves all lines from csv file into an ArrayList "fileLines"
 // 3. fileLines.remove(index) = removes a row from an ArrayList on given index (0 usually for titles for values, etc..)
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+// DŮLEŽITÉ PŘÍKAZY, KTERÉ JE NUTNÉ VĚDĚT:
+// 1. Cesta somePath = Paths.get("src/someCSVfile.csv") = Převede řetězec na cestu a uloží do proměnné "somePath".
+// 2. List<String> fileLines = Files.readAllLines(somePath, UTF_8) = Uloží všechny řádky ze souboru csv do ArrayList "fileLines"
+// 3. fileLines.remove(index) = odstraní řádek z ArrayList na daném indexu (0 obvykle pro nadpisy pro hodnoty atd..)
+
 
 // READ A FILE STEP BY STEP:
 //      a) We should create a method like "readFile" that takes a path to a file we want to read as its parameter.
@@ -27,6 +33,20 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 // NOTE: Everytime we try to read/write/append a file. We need to handle exceptions that may occur as a result of an invalid file,
 //       or invalid data in the file. We handle exceptions using "try" and "catch" blocks. We can either use a general Exception, or
 //       we can create Exceptions of our own with unique properties. (More on Exceptions in InvalidPokemon..java classes)
+
+PŘEČTĚTE SI SOUBOR KROK ZA KROKEM:
+// a) Měli bychom vytvořit metodu jako "readFile", která jako svůj parametr vezme cestu k souboru, který chceme číst.
+// b) Můžeme pak zavolat metodu "readFile" a předat String s cestou k souboru (kde se soubor nachází)
+// c) Tento řetězec musíme převést na cestu pomocí: " Cesta k souboru = Paths.get(soubor) " kde cesta k souboru = předána
+// Řetězec z kroku (b).
+// d) Můžeme zavolat " Files.readAllLines(filepath, UTF_8) ", kde filepath je cesta z kroku (c) a UTF_8 je
+// volitelný argument představující kódování (doporučuje se však UTF_8)
+// e) Uložte volání funkce z kroku (d) do seznamu. např. "List<String> fileLines = Files.readAllLines(filepath, UTF_8);"
+// f) Metoda "readFile" by měla vrátit ArrayList.
+
+// POZNÁMKA: Při každém pokusu o čtení/zápis/připojení souboru. Potřebujeme ošetřit výjimky, které mohou nastat v důsledku neplatného souboru,
+// nebo neplatná data v souboru. Výjimky zpracováváme pomocí bloků "try" a "catch". Buď můžeme použít obecnou výjimku, popř
+// můžeme vytvářet vlastní výjimky s jedinečnými vlastnostmi. (Více o výjimkách ve třídách InvalidPokemon..java)
 
 // MANIPULATE DATA STEP BY STEP:
 //      a) Now that we successfully saved our csv file into an ArrayList "fileLines", we can extract just the data we need.
