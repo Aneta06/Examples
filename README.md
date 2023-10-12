@@ -191,10 +191,7 @@ projects
 - Solution:
 ```
 *type your answer here*
-1. $ cd program, 
-   $ rm data.txt
-   $ cd ..
-   $ rm */data.txt data1.txt
-   2. mv */*.jpg */*.png exama/image/
-   3.git commit -A -m "
+1.$ rm */data.txt
+2.$ mv */*/*.jpg */*/*.png exam/image/
+3.$ git commit -A -m "
 ```
